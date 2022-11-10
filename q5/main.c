@@ -4,7 +4,6 @@
 int main()
 {
     int n, rev=0, rem;
-    printf("Enter any number: ");
     scanf("%d", &n);
     int n1 = n;
     while(n!=0){
@@ -13,11 +12,11 @@ int main()
      n /= 10;
     }
     if (n1 == rev){
-        printf("Yes it's a lucky number ;/ ");
+        printf("Yes");
     }
     else{
-        printf("No it's not the lucky number");
+        printf("No");
     }
-    return 0;
+
     return 0;
 }

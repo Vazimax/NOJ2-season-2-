@@ -5,7 +5,6 @@ int main()
 {
     double mileage, price;
 
-    printf("Enter the mileage you took: ");
     scanf("%lf",&mileage);
     if ( mileage>= 2 && mileage<=15){
         mileage -= 2;
@@ -15,6 +14,7 @@ int main()
         mileage -= 2;
         price = ceil(mileage)*2.1 + 7;
     }
-    printf("The price is: %.4f", price);
+    printf("%.6f", price);
+
     return 0;
 }

@@ -4,7 +4,6 @@
 int main()
 {
     int grade;
-    printf("Enter the grade: ");
     scanf("%d",&grade);
     switch(grade/10){
         case 10:
@@ -27,9 +26,6 @@ int main()
         case 5:
             printf("A");
             break;
-
-        default :
-            printf("There is something wrong");
     }
 
     return 0;

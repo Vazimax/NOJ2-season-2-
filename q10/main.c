@@ -4,17 +4,16 @@
 int main()
 {
     int hour, minute;
-    printf("Enter a 24-hour time: ");
     scanf("%d:%d", &hour, &minute);
 
     if (hour == 0)
-       printf("It's: 12:%.2d AM\n\n", minute);
+       printf("12:%.2dAM", minute);
     else if (hour < 12)
-       printf("It's: %d:%.2d AM\n\n", hour, minute);
+       printf("%d:%.2dAM", hour, minute);
     else if (hour == 12)
-        printf("It's: %d:%.2d PM\n\n", hour, minute);
+        printf("%d:%.2dPM", hour, minute);
     else
-        printf("It's: %d:%.2d PM\n\n", hour - 12, minute);
+        printf("0%d:%.2dPM", hour - 12, minute);
 
     return 0;
 }
